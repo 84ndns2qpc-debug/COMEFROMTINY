@@ -90,3 +90,78 @@ section h2 {
 body {
   font-family: "Inter", sans-serif;
 }
+
+#sns {
+  text-align: center;
+}
+
+.sns-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  display: flex;           /* ← これを追加 */
+  justify-content: center; /* ← これを追加 */
+  gap: 20px;  
+}
+
+.sns-list li {
+  margin: 15px 0;
+}
+
+.sns-list a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.sns-list a:hover {
+  opacity: 1;
+}
+
+
+.sns-list i {
+  font-size: 1.5rem;
+}
+
+#sns {
+  margin-bottom: 100px;
+}
+
+
+.site-logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 56px;
+  height: 56px;
+  z-index: 1000;
+}
+
+.site-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px; /* 少し角丸、不要なら消してOK */
+}
+
+.site-logo {
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.site-logo:hover {
+  opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+  .site-logo {
+    width: 44px;
+    height: 44px;
+    top: 15px;
+    left: 15px;
+  }
+}
