@@ -146,16 +146,16 @@ body {
 
 @media (max-width: 768px) {
 
-  /* hero を横長に固定 */
   .hero {
-    height: auto;                 /* ← vh を無効化 */
-    aspect-ratio: 21 / 9;         /* ← 横長 */
+    height: auto;                 /* 高さ固定を解除 */
+    aspect-ratio: auto;           /* 比率固定しない */
+    background-size: contain;     /* ★これが本命 */
     background-position: center;
+    padding-top: 56.25%;          /* 16:9 相当の余白 */
   }
 
   .hero h1 {
     font-size: 1.8rem;
-    letter-spacing: 0.15em;
   }
 
   section {
