@@ -144,8 +144,6 @@ body {
   opacity: 1;
 }
 
-
-
 @media (max-width: 768px) {
 
   /* hero を横長に固定 */
@@ -171,3 +169,4 @@ body {
     left: 15px;
   }
 }
+
