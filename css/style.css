@@ -144,12 +144,15 @@ body {
   opacity: 1;
 }
 
+
+
 @media (max-width: 768px) {
 
-  /* hero */
+  /* hero を横長に固定 */
   .hero {
-    height: 35vh;
-    background-position: center top;
+    height: auto;                 /* ← vh を無効化 */
+    aspect-ratio: 21 / 9;         /* ← 横長 */
+    background-position: center;
   }
 
   .hero h1 {
@@ -157,23 +160,14 @@ body {
     letter-spacing: 0.15em;
   }
 
-  /* セクション余白 */
   section {
     padding: 40px 15px;
   }
 
-  /* ロゴ */
   .site-logo {
     width: 44px;
     height: 44px;
     top: 15px;
     left: 15px;
   }
-
-  /* ナビ（必要なら） */
-  .global-nav a {
-    font-size: 0.75rem;
-    margin: 0 10px;
-  }
 }
-
